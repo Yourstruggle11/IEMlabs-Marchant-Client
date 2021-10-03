@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+font-family: 'Neucha', cursive;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+}
+
+.HomeScreen{
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+}
+.HomeScreen .header{
+    width: 100%;
+    height: 12rem;
+    background: #ffffff;
+    position: fixed;
+    box-shadow: 0 0 1.5rem 0.2rem #00000050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3C4257;
+    letter-spacing: 0.2rem;
+    font-size: 4rem;
+    font-family: 'Neucha', cursive;
+ }
+ .HomeScreen .header button{
+     width: 16.4rem;
+     height: 4.58rem;
+     position: absolute;
+     right: 6.1rem;
+     background: #6772e5d7;
+     color: #ffffff;
+     letter-spacing: 0.2rem;
+     font-size: 2rem;
+     font-family: 'Neucha', cursive;
+    box-shadow: 0 0 1.5rem 0.1rem #00000050;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+ }
+ .HomeScreen .filter-bar{
+    max-width: 80rem;
+    min-height: 6.3rem;
+    border-radius: 1.5rem;
+    background: #ffffff;
+    box-shadow: 0 0.4rem 0.4rem #00000050,
+                -0.2rem 0.2rem 0.4rem #00000050;
+    position: fixed;
+    top: 16.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .HomeScreen .filter-bar button{
+     margin-right: 5rem;
+     border-radius: 0.5rem;
+     outline: none;
+     border: none;
+     color: #000000;
+     letter-spacing: 0.2rem;
+     font-size: 2rem;
+     width: 7.8rem;
+     height: 4.4rem;
+     cursor: pointer;
+     background: #E7E49C;
+ }
+ .HomeScreen .filter-bar button:nth-child(3){
+     width: 19.2rem;
+ }
+ .HomeScreen .product-card-body{
+    width: 100%;
+    height: auto;
+    margin-top: 26.3rem;
+    background: #ffffff;
+    padding: 2.1rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: -5;
+ }
+ .HomeScreen .product-card-body .product-card{
+    width: 40.2rem;
+    height: 17rem;
+    border-radius: 1rem;
+    box-shadow: 0 15px 35px 0 rgb(60 66 87 / 8%), 
+                0 5px 15px 0 rgb(0 0 0 / 12%);
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:5rem ;
+    margin-bottom: 5rem;
+ }
+ .HomeScreen .product-card-body .product-card .left-side{
+    width: 13.4rem;
+    height: 17rem;
+    border-radius: 1rem 0 0 1rem;
+    cursor: pointer;
+ }
+ .HomeScreen .product-card-body .product-card .left-side img{
+    width: 13.4rem;
+    height: 17rem;
+    border-radius: 1rem 0 0 1rem;
+ }
+ .HomeScreen .product-card-body .product-card .right-side{
+    width: 26.8rem;
+    height: 17rem;
+    border-radius: 0rem 1rem 1rem 0rem;
+    padding-left: 1.3rem;
+    padding-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ .HomeScreen .product-card-body .product-card .right-side p:nth-child(1){
+     color: #000000;
+     font-size: 2rem;
+     letter-spacing: 0.2rem;
+     font-family: 'Neucha', cursive;
+
+ }
+ .HomeScreen .product-card-body .product-card .right-side p:nth-child(2){
+    color: #000000;
+    font-size: 1rem;
+    font-family: 'Neucha', cursive;
+    width: 18.8rem;
+}
+.HomeScreen .product-card-body .product-card .right-side .price-box {
+    width: 24.2rem;
+    height: 3.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+ .HomeScreen .product-card-body .product-card .right-side .price-box > p{
+    color: #39A388;
+    font-size: 1.2rem;
+    font-family: 'Neucha', cursive;
+ }
+ .HomeScreen .product-card-body .product-card .right-side .price-box button{
+     width: 6.5rem;
+     height: 2.5rem;
+     border-radius: 0.3rem;
+     color: #FFFFFF;
+     font-size: 1rem;
+    font-family: 'Neucha', cursive;
+    background: #39A388;
+    border: none;
+    outline: none;
+    cursor: pointer;
+ }
+ .hidden{
+     display: none;
+ }
+ .notShow{
+     display: none;
+ }
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE CODE STRT HERE */
+
+@media(max-width:1020px){
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:480px){    
+    html{
+        font-size: 35%;
+    }
+    .HomeScreen .header{
+        width: 100%;
+        height: 12rem;
+        background: #ffffff;
+        position: fixed;
+        box-shadow: 0 0 1.5rem 0.2rem #00000050;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #3C4257;
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+        font-family: 'Neucha', cursive;
+        padding-left: 1rem;
+     }
+     .HomeScreen .header button{
+         width: 16.4rem;
+         height: 4.58rem;
+         position: relative;
+         background: #6772e5d7;
+         color: #ffffff;
+         letter-spacing: 0.2rem;
+         font-size: 2rem;
+         font-family: 'Neucha', cursive;
+        box-shadow: 0 0 1.5rem 0.1rem #00000050;
+        border-radius: 0.5rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+     }
+
+    .HomeScreen .filter-bar{
+        max-width: 80rem;
+        min-height: 6.3rem;
+        border-radius: 1.5rem;
+        background: #ffffff;
+        box-shadow: 0 0.4rem 0.4rem #00000050,
+                    -0.2rem 0.2rem 0.4rem #00000050;
+        position: fixed;
+        top: 15rem;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 4rem 4rem 1rem 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+     .HomeScreen .filter-bar button{
+         margin-right: 0rem;
+         border-radius: 0.5rem;
+         outline: none;
+         border: none;
+         color: #000000;
+         letter-spacing: 0.2rem;
+         font-size: 2rem;
+         width: 19.2rem;
+         height: 4.4rem;
+         cursor: pointer;
+         background: #E7E49C;
+         margin-bottom: 5rem;
+     }
+     .HomeScreen .product-card-body{
+        width: 100%;
+        height: auto;
+        margin-top: 26.3rem;
+        background: #ffffff;
+        padding: 2.1rem;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: -5;
+     }
+     .notShow{
+        display: block;
+    }
+}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+font-family: 'Neucha', cursive;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+}
+
+.LoginScreen{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(120deg, #E3E8EE,#E9F3FF, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.LoginScreen .header{
+    width: 49rem;
+    height: 5rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #6772E5;
+    margin-bottom: 2rem;
+}
+ .LoginScreen .main-login-box{
+    width: 54rem;
+    height: 55.1rem;
+    background: #ffffff;
+    box-shadow: 0 15px 35px 0 rgb(60 66 87 / 8%),
+                0 5px 15px 0 rgb(0 0 0 / 12%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 7rem;
+    padding-top: 6.5rem;
+ }
+ .LoginScreen .main-login-box > span{
+  display: block;
+ margin-bottom: 2.9rem;
+ font-size: 1.7rem;
+ color:#FF0000;
+ font-family: 'Neucha', cursive;
+}
+ .LoginScreen .main-login-box .heading{
+    width: 40rem;
+    height: 2.7rem;
+    color: #3C4257;
+    font-family: 'Neucha', cursive;
+    font-size: 2.6rem;
+    margin-bottom: 4.5rem;
+  }
+  .LoginScreen .main-login-box .input-box{
+    width: 40rem;
+    height: 11rem;
+  }
+  .LoginScreen .main-login-box .input-box > p{
+    color: #000000;
+    font-family: 'Neucha', cursive;
+    letter-spacing: 0.2rem;
+    font-size: 2.6rem;
+  }
+  .LoginScreen .main-login-box .input-box > .label{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .LoginScreen .main-login-box .input-box > .label > p:nth-child(1){
+    color: #000000;
+    font-family: 'Neucha', cursive;
+    letter-spacing: 0.2rem;
+    font-size: 2.6rem;
+  }
+  .LoginScreen .main-login-box .input-box > .label  p{
+    color: #6772E5;
+    font-family: 'Neucha', cursive;
+    letter-spacing: 0.2rem;
+    font-size: 1.7rem;
+  }
+  .LoginScreen .main-login-box .input-box input{
+    width: 40rem;
+    height: 4.5rem;
+    border: 0.1rem solid #3C4257;
+    border-radius: 0.4rem;
+    color: #000000;
+    font-family: 'Neucha', cursive;
+    letter-spacing: 0.2rem;
+    font-size: 2.6rem;
+    padding-left: 0.5rem;
+  }
+  .LoginScreen .main-login-box .button-box{
+    width: 40rem;
+    height: 11rem;
+    display: grid;
+    place-items: center;
+  }
+  .LoginScreen .main-login-box .button-box button{
+    width: 100%;
+    height: 6rem;
+    background: #6772e5bb;
+    color: #ffffff;
+    font-family: 'Neucha', cursive;
+    letter-spacing: 0.2rem;
+    font-size: 2.6rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  .LoginScreen .footer{
+    width: 49rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    font-family: 'Neucha', cursive;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE CODE START HERE */
+
+@media(max-width:1020px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 40%;
+    }
+}
+
+
+@media(max-width:480px){    
+    html{
+        font-size: 35%;
+    }
+}
