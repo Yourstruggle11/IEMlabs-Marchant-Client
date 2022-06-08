@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = process.env.NODE_SERVER_API;
+const API_URL = process.env.REACT_APP_API;
 
 export const sendRecoveryEmail = (email) => async  (dispatch) =>{
     try {

@@ -4,7 +4,7 @@ import IEMlabsLogo from "../../assets/IEMLabs.jpg"
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-const API_URL = process.env.NODE_SERVER_API;
+const API_URL = process.env.REACT_APP_API;
 
 
 export default function ProductCard({
