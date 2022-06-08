@@ -1,5 +1,8 @@
 import axios from "axios";
 
+const API_URL = process.env.NODE_SERVER_API;
+
+
 export const userRegistration = (username, email, password) => async (dispatch) =>{
     try {
         dispatch({
@@ -9,7 +12,7 @@ export const userRegistration = (username, email, password) => async (dispatch) 
             "Content-type": "application/json",    
         }
         const {data} = await axios.post(
-                                        "https://iemlabs-merchant-server.herokuapp.com/useAccount/signup",
+                                        `${API_URL}/useAccount/signup`,
                                         {username, email, password},
                                         config
                                         );
@@ -37,7 +40,7 @@ export const userAccountActivation = (id) => async (dispatch) =>{
             "Content-type": "application/json",
         }
         const data = await axios.put(
-            `https://iemlabs-merchant-server.herokuapp.com/useAccount/accountActivation/${id}`,
+            `${API_URL}/useAccount/accountActivation/${id}`,
             config
         )
         dispatch({
@@ -55,7 +58,7 @@ export const userAccountDelete = (id) => async (dispatch) =>{
             "Content-type": "application/json",    
         }
         const {data} = await axios.delete(
-            `https://iemlabs-merchant-server.herokuapp.com/useAccount/${id}`,
+            `${API_URL}/useAccount/${id}`,
             config
         )
         dispatch({
@@ -79,7 +82,7 @@ export const userLogin = (email,password) => async (dispatch) =>{
             "Content-type": "application/json", 
         }
         const data = await axios.post(
-            "https://iemlabs-merchant-server.herokuapp.com/useAccount/login",
+            `${API_URL}/useAccount/login`,
              {email,password},
              config
              )

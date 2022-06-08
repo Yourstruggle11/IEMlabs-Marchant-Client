@@ -1,5 +1,7 @@
 import axios from "axios";
 
+const API_URL = process.env.NODE_SERVER_API;
+
 export const sendRecoveryEmail = (email) => async  (dispatch) =>{
     try {
         dispatch({
@@ -9,7 +11,7 @@ export const sendRecoveryEmail = (email) => async  (dispatch) =>{
             "Content-type": "application/json",    
         }
         const {data} = await    axios.post(
-            "https://iemlabs-merchant-server.herokuapp.com/user/forgotpassword/sendmail" ,
+            `${API_URL}/user/forgotpassword/sendmail` ,
                                         {email},
                                         config
         )
@@ -36,7 +38,7 @@ export const updatePassword = (password,id) => async  (dispatch) =>{
             "Content-type": "application/json",    
         }
         const {data} = await  axios.put(
-            `https://iemlabs-merchant-server.herokuapp.com/user/forgotpassword/updatepassword/${id}` ,
+            `${API_URL}/user/forgotpassword/updatepassword/${id}` ,
                                         {password},
                                         config
         )

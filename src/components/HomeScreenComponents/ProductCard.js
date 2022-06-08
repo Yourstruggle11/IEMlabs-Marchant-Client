@@ -4,6 +4,8 @@ import IEMlabsLogo from "../../assets/IEMLabs.jpg"
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+const API_URL = process.env.NODE_SERVER_API;
+
 
 export default function ProductCard({
   ProductName,
@@ -31,7 +33,7 @@ export default function ProductCard({
     // "Content-Type": "application/json"
     // }
 
-    return fetch("https://iemlabs-merchant-server.herokuapp.com/payment/paymentgetway", {
+    return fetch(`${API_URL}/payment/paymentgetway`, {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",

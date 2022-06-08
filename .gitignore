@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .env
+payment.js
 
 # testing
 /coverage
