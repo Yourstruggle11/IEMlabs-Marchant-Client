@@ -61,7 +61,7 @@ export default function HomeScreen() {
         <>
             <div className="HomeScreen">
                 <div className="header">
-                    <p>Order Your Favourite Marchant</p>
+                    <p>Order Your Favourite Merchant</p>
                     <button onClick={LogOut}>LOGOUT</button>
                 </div>
                 <div className="filter-bar" id="filter-box">

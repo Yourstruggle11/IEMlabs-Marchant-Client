@@ -71,7 +71,7 @@ export default function ProductCard({
             <p>Price : {Price} Rs.</p>
             <StripeCheckout
               name="IEMlabs Pvt Ltd." // the pop-in header title
-              description="IEMlabs Marchant" // the pop-in header subtitle
+              description="IEMlabs Merchant" // the pop-in header subtitle
               image={IEMlabsLogo}
               ComponentClass="div"
               panelLabel="Confirm Order" // prepended to the amount in the bottom pay button
