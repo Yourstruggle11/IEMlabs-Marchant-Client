@@ -25,7 +25,7 @@ export default function LoginScreen() {
 
         
 
-        console.log(loading);
+        // console.log(loading);
 
         useEffect(() => {
             if(userInfo){
@@ -78,7 +78,7 @@ export default function LoginScreen() {
                         <input 
                         type="email" 
                         name="" 
-                        id=""
+                        // id=""
                         value={email}
                         onChange={(e)=>{
                          setEmail(e.target.value)
@@ -93,7 +93,7 @@ export default function LoginScreen() {
                         <input 
                         type="password" 
                         name="" 
-                        id=""
+                        // id=""
                         value={password}
                         onChange={(e)=>{
                         setPassword(e.target.value)

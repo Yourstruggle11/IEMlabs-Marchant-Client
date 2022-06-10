@@ -23,7 +23,11 @@ export default function ProductCard({
   }
 
   function Pyment(token) {
-    console.log(token);
+    const {token: jwtToken} =  JSON.parse(localStorage.getItem("userInfo"));
+    console.log('====================================');
+    console.log(jwtToken);
+    console.log('====================================');
+    // console.log(token);
     const body = {
       token,
       product,
@@ -33,10 +37,11 @@ export default function ProductCard({
     // "Content-Type": "application/json"
     // }
 
-    return fetch(`${API_URL}/payment/paymentgetway`, {
-      method: "POST", // or 'PUT'
+    return fetch(`${API_URL}/payment/paymentgateway`, {
+      method: "POST", 
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${jwtToken}`
       },
       body: JSON.stringify(body),
     })

@@ -83,7 +83,7 @@ export const userLogin = (email,password) => async (dispatch) =>{
         const config = {
             "Content-type": "application/json", 
         }
-        const data = await axios.post(
+        const {data} = await axios.post(
             `${API_URL}/user-account/login`,
              {email,password},
              config
