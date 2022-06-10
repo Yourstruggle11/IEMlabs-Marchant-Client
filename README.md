@@ -12,11 +12,13 @@
 
  01     ``` git clone https://github.com/Yourstruggle11/IEMlabs-Marchant-Client.git ```
 
- 02 ```npm install ```
+ 02      ``` cd IEMlabs-Marchant-Client  ```
 
- 03 ``` npm start ```
+ 03      ```npm install ```
 
- 04 ``` Open http://localhost:3000 ```
+ 04      ``` npm start ```
+
+ 05      ``` Open http://localhost:3000 ```
 
 
  
