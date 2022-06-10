@@ -14,7 +14,7 @@ export const userRegistration = (username, email, password) => async (dispatch) 
             "Content-type": "application/json",    
         }
         const {data} = await axios.post(
-                                        `${API_URL}/useAccount/signup`,
+                                        `${API_URL}/user-account/signup`,
                                         {username, email, password},
                                         config
                                         );
@@ -42,7 +42,7 @@ export const userAccountActivation = (id) => async (dispatch) =>{
             "Content-type": "application/json",
         }
         const data = await axios.put(
-            `${API_URL}/useAccount/accountActivation/${id}`,
+            `${API_URL}/user-account/account-activation/${id}`,
             config
         )
         dispatch({
@@ -60,7 +60,7 @@ export const userAccountDelete = (id) => async (dispatch) =>{
             "Content-type": "application/json",    
         }
         const {data} = await axios.delete(
-            `${API_URL}/useAccount/${id}`,
+            `${API_URL}/user-account/${id}`,
             config
         )
         dispatch({
@@ -84,7 +84,7 @@ export const userLogin = (email,password) => async (dispatch) =>{
             "Content-type": "application/json", 
         }
         const data = await axios.post(
-            `${API_URL}/useAccount/login`,
+            `${API_URL}/user-account/login`,
              {email,password},
              config
              )

@@ -11,7 +11,7 @@ export const sendRecoveryEmail = (email) => async  (dispatch) =>{
             "Content-type": "application/json",    
         }
         const {data} = await    axios.post(
-            `${API_URL}/user/forgotpassword/sendmail` ,
+            `${API_URL}/user/forgot-password/sendmail` ,
                                         {email},
                                         config
         )
@@ -38,7 +38,7 @@ export const updatePassword = (password,id) => async  (dispatch) =>{
             "Content-type": "application/json",    
         }
         const {data} = await  axios.put(
-            `${API_URL}/user/forgotpassword/updatepassword/${id}` ,
+            `${API_URL}/user/forgot-password/update-password/${id}` ,
                                         {password},
                                         config
         )
